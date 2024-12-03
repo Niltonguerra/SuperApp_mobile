@@ -19,9 +19,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SuperAppTheme {
+                // Define a estrutura principal com Scaffold
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    // Exibe o texto Hello, World!
                     Greeting(
-                        name = "Android",
+                        name = "World",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -32,8 +34,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+    // Define o texto "Hello, World!"
     Text(
-        text = "Hello $name!",
+        text = "eu amo você, $name !!!",
         modifier = modifier
     )
 }
@@ -42,6 +45,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     SuperAppTheme {
-        Greeting("Android")
+        Greeting("nilton")
     }
 }
